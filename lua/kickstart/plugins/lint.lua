@@ -52,4 +52,15 @@ return {
       })
     end,
   },
+  {
+    "williamboman/mason.nvim", config(function()
+      require("mason").setup({
+        lint = {
+          enabled = true,
+          debounce = 100,
+          severity = "error",
+        },
+      })
+    end),
+  },
 }
